@@ -1,0 +1,242 @@
+body {
+    font-family: "Inter", sans-serif;
+    color: white;
+    background-color: #131313;
+    margin: 0;
+    padding: 0;
+}
+
+/* Основные стили для десктопов */
+.header {
+    width: 100%;
+    height: 110vh;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.header_naw {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cont_header {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+.header_text {
+    width: 50%;
+    padding-left: 3%;
+}
+.header__links-img {
+    width: 30%;
+    text-align: center;
+}
+.header_text-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.header_text-txt {
+    margin-top: 2%;
+    font-size: 1rem;
+}
+.img1 {
+    margin-left: 20px;
+    width: 100%;
+    height: auto;
+}
+.header__top-button {
+    transition: 0.3s;
+}
+.header__top-button:hover {
+    color: #939393;
+}
+.header__top-button2 {
+    margin-right: 15%;
+}
+
+/* Основной контент */
+.base {
+    width: 100%;
+    padding: 7% 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.img2 {
+    width: 70%;
+    height: auto;
+}
+.base_text {
+    width: 45%;
+    font-size: 1rem;
+}
+.base_text_title {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    width: 100%;
+    padding: 2% 18%;
+    background-color: #202020;
+    position: relative;
+}
+.footer::before {
+    background-image: url("../img/footer.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 15%;
+    content: ' ';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+.def-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text {
+    font-size: 1.5rem;
+    margin-right: 5%;
+}
+.footer-icon-yt {
+    width: 60px;
+    transition: 0.3s;
+}
+.footer-icon-yt:hover {
+    opacity: 70%;
+}
+.footer-link {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.footer-link:hover {
+    color: #939393;
+}
+
+/* Медиазапросы для адаптивности */
+
+/* Для планшетов (ширина от 768px до 1024px) */
+@media (max-width: 1024px) {
+    .header {
+        height: 70vh;
+    }
+    .header_text {
+        width: 60%;
+        
+        padding-left: 3%;
+    }
+    .header__links-img {
+        width: 35%;
+    }
+    .header_text-title {
+        font-size: 2rem;
+    }
+    .base {
+        flex-direction: column;
+    }
+    .base_img {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .img2 {
+        width: 70%;
+    }
+    .base_text {
+        width: 90%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+}
+
+/* Для мобильных устройств (ширина до 768px) */
+@media (max-width: 768px) {
+    .header {
+        height: 70vh;
+        background-size: cover;
+    }
+    .header_naw {
+        flex-direction: column;
+        padding: 0;
+    }
+    .cont_header {
+        flex-direction: column;
+        padding: 0;
+    }
+    .header_text {
+        width: 90%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .header__links-img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .header_text-title {
+        font-size: 1.5rem;
+    }
+    .header_text-txt {
+        font-size: 0.9rem;
+    }
+    .base {
+        flex-direction: column;
+        padding: 2% 5%;
+    }
+    .img2 {
+        width: 50%;
+    }
+    .base_text {
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .footer-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .footer-icon-yt {
+        width: 50px;
+    }
+    .header_button {
+        margin-top: 20px;
+    }
+    .img1 {
+        margin-left: 0;
+        width: 65%;
+    }
+}
+
+
+.header_button {
+    padding: 0% 13%;
+    display: flex;
+}
+
+
+
+
+
