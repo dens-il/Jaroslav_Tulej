@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* Основные стили для десктопов */
 .header {
     width: 100%;
@@ -64,11 +63,11 @@ body {
 .header__top-button2 {
     margin-right: 15%;
 }
-
 /* Основной контент */
 .base {
     width: 100%;
     padding: 7% 18%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -135,9 +134,7 @@ footer {
 .footer-link:hover {
     color: #939393;
 }
-
 /* Медиазапросы для адаптивности */
-
 /* Для планшетов (ширина от 768px до 1024px) */
 @media (max-width: 1024px) {
     .header {
@@ -230,13 +227,7 @@ footer {
     }
 }
 
-
 .header_button {
     padding: 0% 13%;
     display: flex;
 }
-
-
-
-
-
